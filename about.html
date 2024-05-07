@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav class="nav-menu">
+        <div class="logo-menu" onclick=showMenu()>
+            <div class="logo" id="i-logo">
+                <img src="./logo.png" alt="imdb-logo">
+            </div>
+            <div class="bar-menu hover">
+                <i class="fa-solid fa-bars"></i> <span>Menu</span>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" name="searchMovie" id="searchMovie" placeholder="Search IMDb"
+            autocomplete="off">
+            <div id="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="fabs-login">
+            <h1 class="hover imdbpro" id="im-pro">IMDb<span id="diff-color">Pro</span> |</h1>
+            <h3 class="hover"><a href="./WatchList/myfav.html"><i class="fa-solid fa-folder-plus"></i> Watchlist</a>
+            </h3>
+            <h3 class="hover" id="signin"><a href="https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F"
+                    target="_blank">Sign
+                    In</a></h3>
+        </div>
+    </nav>
+
+
+    <div class="side-option" id="side">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <br>
+        <br>
+        <ul class="side-list">
+            <li>
+                <div> <i class="fa-solid fa-film"></i>&nbsp;<span>Movies</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <li>
+                <div> <i class="fa-solid fa-tv"></i>&nbsp;<span>Tv Shows</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <li>
+                <div><i class="fa-solid fa-video"></i>&nbsp;<span>Watch</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <li>
+                <div> <i class="fa-solid fa-award"></i>&nbsp;<span>Awards & Events</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <li>
+                <div><i class="fa-solid fa-person"></i>&nbsp;<span>Celebs</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <li>
+                <div><i class="fa-solid fa-globe"></i>&nbsp;<span>Community</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+            </li>
+            <br>
+            <br>
+            <li>
+                <div>
+                    <h4>IMDbPro</h4>
+                    <p style="font-size: 15px;">For Industrial Professionals</p>
+                </div>
+                <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </li>
+
+        </ul>
+    </div>
+    <div id="main">
+        <!-- container for movie list coming from IMDB API here i access Api proprty and functionality and form dynamic Html Element that append here-->
+              <!-- movie is displayed here  -->
+          <div id="movie-display">
+             
+              <!-- i write this dummy text for upcoming data when we access TMDB API  -->
+      
+              <!-- <div class="each-movie-page">
+      
+                  <div class="movie-poster">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB06zANAWkdMC2XZazOOJKxtCR7JvgTml-wQ&usqp=CAU" alt="Poster">
+                  </div>
+      
+                <div class="movie-details">
+      
+                    <div class="title">  Thor</div>
+                   <div class="tagline">Movie tagline</div>
+                    <div style="display: flex;"> 
+                        <div class="movie-duration">
+                            <b><i class="fas fa-clock"></i></b> 4.22
+                        </div>
+                       <div class="release-date">
+                            <b>Raleased</b>: 2023-05-01
+                        </div>
+                    </div>
+        
+                     <div class="rating">
+                        <b>IMDb Rating</b>: 8.6
+                    </div>
+        
+                    <div class="trailer-div" id="trailer-div-btn">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+        
+                    <div id="trailer-video-div">
+                        <button id="remove-video-player"><i class="fas fa-times"></i></button>
+                        <br>
+                        <span><iframe width="560" height="315" src=${youtubeURL} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>   
+                    </div>
+            
+                    <div class="plot">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta enim tenetur libero placeat. Autem vitae, magnam repellendus molestiae quaerat libero veritatis inventore, expedita, quo iste explicabo ipsam! Commodi reprehenderit doloribus expedita eveniet explicabo sint perferendis reiciendis debitis pariatur ratione. Odio modi similique impedit maiores magnam eaque optio repellat id.
+                    </div>
+                   </div>
+      
+                </div/>
+      
+              </div> -->
+      
+      
+          </div>
+    </div>
+    <script src="./index.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
